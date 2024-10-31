@@ -1,0 +1,435 @@
+:root {
+    --body-medium-medium-font-family: "Inter", Helvetica;
+    --body-medium-medium-font-weight: 500;
+    --body-medium-medium-font-size: 16px;
+    --body-medium-medium-letter-spacing: 0px;
+    --body-medium-medium-line-height: 24px;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre logo y menú/íconos */
+    align-items: center; /* Centra verticalmente */
+    padding: 0 20px; /* Espacio lateral */
+}
+
+/* Ajusta el main-nav para que ocupe todo el ancho */
+.main-nav {
+    flex-grow: 1; /* Permite que el menú ocupe el espacio disponible */
+    display: flex;
+    justify-content: center; /* Centra los elementos del menú */
+}
+
+/* Centra el menú */
+.main-nav ul {
+    display: flex; 
+    justify-content: center; /* Centra horizontalmente */
+    padding: 0; 
+    list-style: none; 
+    margin: 0; 
+}
+
+.main-nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos del menú */
+}
+
+.main-nav ul li a {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+    font-size: 16px; 
+    letter-spacing: 1px; 
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    justify-content: center; /* Centra el logo */
+    margin-bottom: 10px; /* Espacio debajo del logo */
+}
+.logo img {
+    max-width: 150px; /* Ajusta el tamaño según sea necesario */
+}
+
+/* Alineación de nav y icons */
+nav {
+    display: flex; 
+    justify-content: space-between; /* Espacio entre logo y íconos */
+    align-items: center; 
+    padding: 10px 20px; 
+}
+
+.icons {
+    display: flex; 
+}
+
+.icons .icon {
+    margin-left: 20px; /* Espacio entre los íconos */
+}
+/* Estilos de la sección hero */
+.hero {
+    position: relative;
+    display: flex; /* Usamos flexbox para alinear la imagen y el contenido */
+    align-items: center; /* Alinea verticalmente la imagen y el contenido */
+    color: rgb(168, 106, 61);
+    background-color: rgb(226, 217, 214);
+    padding: 20px; /* Ajusta el relleno según sea necesario */
+}
+
+.hero img {
+    max-width: 40%; /* Cambia el tamaño de la imagen (ajustar según sea necesario) */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el contenido */
+}
+.hero-content {
+    text-align: left;
+    max-width: 60%; /* Limita el ancho del contenido */
+}
+
+.hero h1 {
+    font-size: 46px; /* Ajuste de tamaño para acercarse más al diseño */
+    font-weight: 700;
+    color: #a15c3e; /* Marrón anaranjado específico del diseño */
+    line-height: 1.2;
+    margin: 15px 0;
+    font-family: var(--body-medium-medium-font-family);
+    text-transform: uppercase;
+}
+
+.hero h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4a4a4a; /* Gris oscuro */
+    margin: 0;
+    font-family: var(--body-medium-medium-font-family);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero button {
+    padding: 12px 24px;
+    background-color: #ed1c24; /* Cambiar a un color más brillante */
+    color: #fff;
+    font-size: 16px;
+    border: none; /* Sin borde */
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-family: var(--body-medium-medium-font-family);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Estilos de la sección de marcas */
+.brands {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.brands img {
+    max-width: 100px;
+}
+
+/* Estilos de la sección de nuevas llegadas */
+.new-arrivals {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.new-arrivals h2 {
+    font-family: var(--body-medium-medium-font-family);
+    font-weight: 700;
+}
+
+.new-arrivals p {
+    margin-bottom: 20px; /* Espacio debajo del texto descriptivo */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #666; /* Color gris para el texto */
+}
+
+.tabs {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    margin-bottom: 20px; /* Espacio debajo de los filtros */
+}
+
+.tabs button {
+    padding: 10px 15px;
+    margin: 0 5px; /* Espacio entre botones */
+    border: none; /* Sin borde */
+    background-color: #f5f5f5; /* Fondo claro para los botones */
+    color: #333; /* Color del texto */
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Negrita para mejor legibilidad */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+.tabs button.active {
+    background-color: #ff4500; /* Fondo naranja para el botón activo */
+    color: #fff; /* Texto blanco para el botón activo */
+}
+.tabs button:hover {
+    background-color: #e53935; /* Cambio de fondo al pasar el mouse */
+    color: #fff; /* Texto blanco al pasar el mouse */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* Espacio entre tarjetas */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Estilos para el producto */
+.product {
+    background-color: #fff;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s; /* Efecto de transformación */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Escalar al pasar el mouse */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-weight: 600; /* Peso de fuente ajustado */
+}
+
+.product p {
+    color: #ff4500; /* Color para el precio */
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.product .original-price {
+    text-decoration: line-through; /* Tacha el precio original */
+    color: #888; /* Color gris para el precio original */
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 10px 20px; /* Tamaño del botón */
+    background-color: #333; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave al pasar el mouse */
+}
+.product button:hover {
+    background-color: #ff4500; /* Cambia el color al pasar el mouse */
+}
+.view-all {
+    margin-top: 20px;
+    padding: 12px 24px; /* Tamaño del botón */
+    background-color: #ed1c24; /* Color de fondo rojo */
+    color: white; /* Color del texto en blanco */
+    border: none; /* Sin borde */
+    border-radius: 6px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita para mejor legibilidad */
+    text-align: center; /* Centra el texto dentro del botón */
+    display: inline-block; /* Para que se comporte como un botón */
+    transition: background-color 0.3s; /* Transición suave al pasar el mouse */
+}
+
+.view-all:hover {
+    background-color: #c51c1f; /* Cambia a un color más oscuro al pasar el mouse */
+}
+
+/* Estilos de la sección de venta de verano */
+.summer-sale {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    background-image: url('/assets/img/9c1a1c85c11c236f9317b811fa709f36.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 60px 0;
+    color: white;
+    overflow: hidden; /* Para asegurar que el pseudo-elemento no sobresalga */
+}
+.summer-sale::before {
+    content: ''; /* Crea un contenido vacío para el pseudo-elemento */
+    position: absolute; /* Posiciona el pseudo-elemento */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Cuadro negro con opacidad */
+    z-index: 2; 
+}
+
+.summer-sale::after {
+    content: ''; /* Crea un contenido vacío para el pseudo-elemento */
+    position: absolute; /* Posiciona el pseudo-elemento */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/img/9c1a1c85c11c236f9317b811fa709f36.png'); /* Añade la misma imagen */
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px); /* Aplica desenfoque */
+    z-index: 1; 
+}
+
+
+.summer-sale h1, h3 , .summer-sale p {
+    margin: 0;
+    position: relative; 
+    z-index: 2;
+}
+.summer-sale h1 {
+    font-size: 48px; /* Aumentar el tamaño de la fuente para el título principal */
+    margin: 10px 0; /* Espacio entre el título y el texto */
+}
+.summer-sale h2 {
+    font-size: 24px; /* Tamaño del encabezado */
+    margin-bottom: 10px 0; /* Espacio inferior */
+}
+.summer-sale p {
+    font-size: 18px; /* Tamaño del párrafo */
+    margin-bottom: 20px 0; /* Espacio inferior */
+}
+
+.summer-sale button {
+    padding: 12px 24px; 
+    font-size: 18px; 
+    background-color: #ed1c24; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    position: relative; 
+    z-index: 2; 
+}
+
+/* Estilos de la sección de servicios */
+.services {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.service {
+    flex: 1;
+    padding: 20px;
+}
+
+.service .icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #fff; /* Cambiar a blanco */
+    color: #000; /* Cambia el color del texto a gris oscuro para mayor contraste */
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #333; /* Cambiar el color del enlace a gris oscuro */
+    text-decoration: none;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column; /* Coloca los íconos debajo del logo en pantallas pequeñas */
+        align-items: center; /* Centra horizontalmente */
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .main-nav ul li {
+        margin: 5px 0; /* Ajusta el margen entre elementos del menú */
+    }
+
+    .icons {
+        margin-top: 10px; /* Espacio entre el logo y los íconos */
+    }
+    nav ul {
+        display: none;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services {
+        flex-wrap: wrap;
+    }
+
+    .service {
+        flex-basis: 50%;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        flex-basis: 50%;
+        margin-bottom: 20px;
+    }
+}

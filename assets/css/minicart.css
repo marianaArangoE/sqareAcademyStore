@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para contraste */
+    margin: 0;
+    padding: 0;
+}
+
+.minicart-container {
+    position: fixed; /* Posiciona el minicart en la pantalla */
+    top: 50%; /* Centra verticalmente */
+    right: 0; /* Alinea el minicart a la derecha */
+    transform: translateY(-50%); /* Ajusta el centrado vertical */
+    width: 700px; /* Ancho del minicart */
+    height: 1000px; /* Altura del minicart */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1000; 
+    overflow-y: auto; /* Habilita el desplazamiento si el contenido excede */
+}
+
+header {
+    text-align: center; /* Centra el texto en el encabezado */
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #e53935; /* Color destacado para el precio y el texto de envío gratis */
+}
+
+.cart-item {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+}
+
+.cart-item img {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin-right: 10px; /* Reduce el margen derecho para acercar la imagen a la información */
+}
+
+.item-details {
+    flex: 1;
+    text-align: left; 
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Centra los botones de cantidad */
+    margin-top: 10px;
+}
+
+.quantity-button {
+    border: none;
+    background-color: #e53935; /* Botón rojo */
+    color: white;
+    padding: 0%;
+    cursor: pointer;
+}
+
+.quantity-input {
+    width: 40px; /* Ancho del campo de entrada */
+    text-align: center; /* Centra el texto dentro del campo */
+    border: none; /* Eliminar el borde */
+    background-color: transparent; /* Fondo transparente */
+    margin: 0 5px; /* Espacio entre botones y campo de entrada */
+    outline: none; /* Sin contorno al seleccionar */
+}
+
+.wrap-option {
+    margin: 20px 0; /* Aumenta el espacio vertical */
+    text-align: center; /* Centra el texto de la opción de envoltura */
+    border-top: 1px solid #ccc; /* Línea superior */
+    padding-top: 100px; /* Aumenta el espaciado superior */
+    padding-bottom: 10px; /* Aumenta el espaciado inferior */
+}
+
+.subtotal {
+    display: flex;
+    flex-direction: column; /* Cambia a columna para el subtotal */
+    align-items: center; /* Centra el subtotal */
+    margin-top: 20px;
+    font-size: 18px;
+    border-top: 1px solid #ccc; /* Línea superior */
+    padding-top: 10px; /* Espaciado arriba */
+}
+
+.checkout, .view-cart {
+    background-color: #e53935; /* Botones rojos */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Espacio entre botones */
+    width: 100%; /* Ancho completo para botones */
+}
+
+.view-cart {
+    background-color: white; /* Botón blanco */
+    color: black;
+}
+
+.checkout:hover, .view-cart:hover {
+    background-color: #c62828; /* Color más oscuro al pasar el mouse */
+}

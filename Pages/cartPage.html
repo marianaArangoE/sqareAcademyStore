@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/assets/css/cartPage.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/assets/img/LogoVector.svg" alt="Logo SQUARE">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Mujer</a></li>
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <span class="icon">
+                    <img src="/assets/img/Search.svg" alt="Buscar">
+                </span>
+                <span class="icon">
+                    <img src="/assets/img/user.svg" alt="Usuario">
+                </span>
+                <span class="icon">
+                    <img src="/assets/img/shopping.svg" alt="Carrito">
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="cart-title">
+            <h1>Shopping Cart</h1>
+            <nav>
+                <a href="#">Home</a>
+                <span> &gt; </span>
+                <a href="#">Your Shopping Cart</a>
+            </nav>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="cart-item">
+                            <img src="/assets/img/shopping/Barkover.svg"
+                                alt="Mini Dress With Ruffled Straps">
+                            <div class="item-details">
+                                <h3>Mini Dress With Ruffled Straps</h3>
+                                <p>Color : Red</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$14.90</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="quantity-button">-</button>
+                            <input type="text" class="quantity-input" value="1" readonly>
+                            <button class="quantity-button">+</button>
+                        </div>
+                    </td>
+                    <td>$14.90</td>
+                </tr>
+                <!-- Puedes agregar más productos aquí -->
+            </tbody>
+        </table>
+
+        <div class="wrap-option">
+            <input type="checkbox" id="wrap-product" />
+            <label for="wrap-product">For $10.00 Please Wrap The Product</label>
+        </div>
+
+        <div class="subtotal">
+            <div class="separador">
+                <p>Subtotal: <span class="highlight">$100.00</span></p>
+                <div class="button-group">
+                    <button class="checkout">Checkout</button>
+                    <button class="view-cart">View Cart</button>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>

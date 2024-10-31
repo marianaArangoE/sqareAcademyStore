@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/minicart.css">
+    <title>Minicart</title>
+</head>
+<body>
+    <div class="minicart-container">
+        <header>
+            <h1>Shopping Cart</h1>
+            <p>Buy <span class="highlight">$122.35</span> More And Get <span class="highlight">Free Shipping</span></p>
+        </header>
+        <main>
+            <div class="cart-item">
+                <img src="/assets/img/shopping/Barkover.svg" alt="Denim Jacket">
+                <div class="item-details">
+                    <h2>Denim Jacket</h2>
+                    <p>Color: Red</p>
+                    <p>Price: $14.80</p>
+                    <div class="quantity">
+                        <button>-</button>
+                        <input type="number" value="1" min="1">
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-option">
+                <input type="checkbox" id="wrap" />
+                <label for="wrap">For $10.00 Please Wrap The Product</label>
+            </div>
+            <div class="subtotal">
+                <p>Subtotal: <span>$100.00</span></p>
+                <button class="checkout">Checkout</button>
+                <button class="view-cart">View Cart</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

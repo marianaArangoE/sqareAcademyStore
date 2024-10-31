@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQUARE1 ACADEMY - Denim Jacket</title>
+    <link rel="stylesheet" href="/assets/css/ProductPage.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/assets/img/LogoVector.svg" alt="SQUARE1 ACADEMY Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">WOMEN</a></li>
+                <li><a href="#">MEN</a></li>
+                <li><a href="#">KIDS</a></li>
+                <li><a href="#">ACCESSORIES</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <span class="icon"><img src="/assets/img/Search.svg" alt="Search"></span>
+            <span class="icon"><img src="/assets/img/user.svg" alt="User"></span>
+            <span class="icon"><img src="/assets/img/shopping.svg" alt="Shopping Cart"></span>
+        </div>
+    </header>
+
+    <main class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <img src="/assets/img/shopping/Barkover.svg" alt="Denim Jacket">
+            </div>
+            <div class="thumbnail-images">
+                <img src="/assets/img/shopping/Barkover.svg" alt="Thumbnail 1">
+                <img src="/assets/img/shopping/Barkover.svg" alt="Thumbnail 2">
+                <img src="/assets/img/shopping/Barkover.svg" alt="Thumbnail 3">
+                <img src="/assets/img/shopping/Barkover.svg" alt="Thumbnail 4">
+                <img src="/assets/img/shopping/Barkover.svg" alt="Thumbnail 5">
+                <img src="/assets/img/shopping/Barkover.svg" alt="Thumbnail 6">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <p class="brand">FASCO</p>
+            <h1 class="product-title">Denim Jacket</h1>
+            <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="review-count">(3)</span>
+            </div>
+            <div class="product-price">
+                <span class="current-price">$39.00</span>
+                <span class="original-price">$59.00</span>
+                <span class="discount">SAVE 35%</span>
+            </div>
+            <p class="viewers">24 people are viewing this right now</p>
+            <div class="sale-countdown">
+                <p>Hurry up! Sale ends in:</p>
+                <div class="timer">
+                    <span id="hours">00</span>:<span id="minutes">05</span>:<span id="seconds">59</span>
+                </div>
+            </div>
+            <div class="stock-info">
+                <p>Only <strong>9</strong> item(s) left in stock!</p>
+                <div class="stock-bar">
+                    <div class="stock-level" style="width: 40%;"></div>
+                    <!-- Cambia el ancho según la cantidad en stock -->
+                </div>
+            </div>
+
+            <div class="product-options">
+                <div class="size-selection">
+                    <p>Size:</p>
+                    <div class="size-buttons">
+                        <button class="size-button selected">M</button>
+                        <button class="size-button">L</button>
+                        <button class="size-button">XL</button>
+                        <button class="size-button">XXL</button>
+                    </div>
+                </div>
+
+                <div class="color-selection">
+                    <p>Color:</p>
+                    <div class="color-buttons">
+                        <button class="color-button selected" style="background-color: lightblue;"></button>
+                        <button class="color-button" style="background-color: black;"></button>
+                        <button class="color-button" style="background-color: pink;"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="quantity-selection">
+                <p>Quantity:</p>
+                <div class="quantity-input">
+                    <button class="decrease">-</button>
+                    <input type="number" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="product-actions">
+                <button class="action-button"><img src="/assets/img/compare.svg" alt="Compare"></button>
+                <button class="action-button"><img src="/assets/img/question.svg" alt="Question"></button>
+                <button class="action-button"><img src="/assets/img/share.svg" alt="Share"></button>
+            </div>
+            <div class="shipping-info">
+                <p><img src="/assets/img/truck.svg" alt="Truck"> Estimated Delivery: Jul 30 - Aug 03</p>
+                <p><img src="/assets/img/box.svg" alt="Box"> Free Shipping & Returns: On all orders over $75</p>
+            </div>
+            <div class="payment-info">
+                <p>Guarantee safe & secure checkout</p>
+                <div class="payment-icons">
+                    <img src="/assets/img/spell.svg" alt="Spell">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Shopping Cart -->
+        <div class="shopping-cart" id="shoppingCart">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <button class="close-cart">✕</button>
+            </div>
+            <p class="free-shipping-message">Buy <strong>$122.35</strong> More And Get Free Shipping</p>
+            <div class="cart-item">
+                <img src="/assets/img/shopping/heat.svg" alt="Denim Jacket" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>Denim Jacket</h3>
+                    <p>Color: Red</p>
+                    <p class="cart-item-price">$14.80</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-decrease">-</button>
+                        <input type="number" value="01" min="1" max="99" class="quantity-input">
+                        <button class="quantity-increase">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="gift-wrap-option">
+                <input type="checkbox" id="giftWrap">
+                <label for="giftWrap">For $10.00 Please Wrap The Product</label>
+            </div>
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <span>$100.00</span>
+            </div>
+            <button class="checkout-button">
+                <a class="view-checkout"href="checkout.html">Checkout</a>
+            </button>
+            <a href="cartPage.html" class="view-cart-link">View Cart</a>
+        </div>
+
+    </main>
+
+
+
+    <script>
+        // Temporizador de cuenta regresiva
+        const countdown = () => {
+            const endDate = new Date(Date.now() + 5 * 60 * 1000); // 5 minutos de cuenta regresiva
+
+            const timer = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = endDate - now;
+
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
+                document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
+                document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
+
+                if (distance < 0) {
+                    clearInterval(timer);
+                    document.querySelector('.sale-countdown').innerHTML = "¡La oferta ha terminado!";
+                }
+            }, 1000);
+        }
+
+        countdown();
+
+        // New script for shopping cart functionality
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function () {
+                document.getElementById('shoppingCart').classList.add('open');
+            });
+        });
+
+        document.querySelector('.close-cart').addEventListener('click', function () {
+            document.getElementById('shoppingCart').classList.remove('open');
+        });
+    </script>
+</body>
+
+</html>
